@@ -3,6 +3,7 @@ import Category from "../Category";
 import Date from "../Date";
 import styles from "./index.module.css";
 import { News } from "@/app/_libs/microcms";
+import Link from "next/link";
 
 
 
@@ -21,14 +22,24 @@ export default function NewsList({ news }: Props) {
     <ul>
     {news.map((article) => (
       <li key={article.id} className={styles.list}>
-        <div className={styles.link}>
+        <Link href={`/news/${article.id}`} className={styles.link}>
+        {article.thumbnail ? (
           <Image
+            src={article.thumbnail.url}
+            alt=""
             className={styles.image}
-            src="/images/no-image.png"
+            width={article.thumbnail.width}
+            height={article.thumbnail.height}
+          />
+        ) : (
+          <Image 
+            className={styles.image}
+            src="no-image.png"
             alt="No Image"
             width={1200}
             height={630}
           />
+        )}
           <dl className={styles.content}>
             <dt className={styles.newsItemTitle}>
               {article.title}
@@ -38,7 +49,7 @@ export default function NewsList({ news }: Props) {
              <Date date={article.publishedAt}/>
             </dd>
           </dl>
-        </div>
+        </Link>
       </li>
     ))}
   </ul>

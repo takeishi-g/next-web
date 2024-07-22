@@ -1,5 +1,6 @@
 import React from 'react'
 import sytles from "./index.module.css"
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -7,13 +8,13 @@ function Footer() {
       <nav className={sytles.nav}>
         <ul className={sytles.items}>
           <li className={sytles.item}>
-            <a href="/news">ニュース</a>
+            <Link href="/news">ニュース</Link>
           </li>
           <li className={sytles.item}>
-            <a href="/member">メンバー</a>
+            <Link href="/members">メンバー</Link>
           </li>
           <li className={sytles.item}>
-            <a href="/contact">お問い合わせ</a>
+            <Link href="/contact">お問い合わせ</Link>
           </li>
         </ul>
         <p>© SIMPLE. All Rights Reserved 2024</p>
