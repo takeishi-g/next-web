@@ -25,7 +25,7 @@ export default function NewsList({ news }: Props) {
       <li key={article.id} className={styles.list}>
         <Link href={`/news/${article.id}`} className={styles.link}>
         {article.thumbnail ? (
-          <Image 
+          <img 
             src={article.thumbnail.url}
             alt=""
             className={styles.image}
@@ -34,7 +34,7 @@ export default function NewsList({ news }: Props) {
           />
         ) : (
 
-          <Image
+          <img
           className={styles.image}
           src="/images/no-image.png"
           alt="No Image"

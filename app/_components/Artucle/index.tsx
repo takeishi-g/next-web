@@ -20,7 +20,7 @@ export default function Article({ data }: Props) {
         <Date date={data.publishedAt ?? data.createdAt} />
       </div>
       {data.thumbnail && (
-        <Image 
+        <img 
           src={data.thumbnail.url}
           alt=""
           className={styles.thumbnail}

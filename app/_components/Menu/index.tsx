@@ -26,17 +26,16 @@ function Menu() {
           </li>
         </ul>
         <button className={cx(styles.button, styles.close)} onClick={close}>
-          <Image 
+          <img 
             src="/images/close.svg"
             alt="閉じる"
             width={24}
             height={24}
-            priority
           />
         </button>
       </nav>
       <button className={styles.button} onClick={open}>
-        <Image src="/images/menu.svg" alt="" width={24} height={24}/>
+        <img src="/images/menu.svg" alt="" width={24} height={24}/>
       </button>
     </div>
   );

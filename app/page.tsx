@@ -21,7 +21,7 @@ export default async function Home() {
             私たちの市場をリードしているグローバルテックカンパニーです。
           </p>
         </div>
-        <Image
+        <img
           className={styles.bgimg}
           src="/images/img-mv.jpg"
           alt=""

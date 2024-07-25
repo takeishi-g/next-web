@@ -13,7 +13,7 @@ export default function Hero({ title, sub }: Props) {
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.sub}>{sub}</p>
       </div>
-      <Image 
+      <img 
         src="/images/img-mv.jpg"
         alt=""
         width={4000}
