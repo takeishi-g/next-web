@@ -8,9 +8,14 @@ type Props = {
   params: {
     slug: string
   }
+  // serchParams: {
+  //   dk?: string
+  // }
 }
 
-export default async function Page({params}: Props) {
+export const revalidate = 0
+
+export default async function Page({ params }: Props) {
   const data = await getNewsDetail(params.slug).catch(notFound)
   return (
     <>
