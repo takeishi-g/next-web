@@ -8,6 +8,7 @@ import Link from "next/link";
 
 
 
+
 type Props = {
   news: 
   News[]
@@ -24,7 +25,7 @@ export default function NewsList({ news }: Props) {
       <li key={article.id} className={styles.list}>
         <Link href={`/news/${article.id}`} className={styles.link}>
         {article.thumbnail ? (
-          <Image
+          <Image 
             src={article.thumbnail.url}
             alt=""
             className={styles.image}
@@ -32,12 +33,13 @@ export default function NewsList({ news }: Props) {
             height={article.thumbnail.height}
           />
         ) : (
-          <Image 
-            className={styles.image}
-            src="no-image.png"
-            alt="No Image"
-            width={1200}
-            height={630}
+
+          <Image
+          className={styles.image}
+          src="/images/no-image.png"
+          alt="No Image"
+          width={1200}
+          height={630}
           />
         )}
           <dl className={styles.content}>
@@ -46,7 +48,7 @@ export default function NewsList({ news }: Props) {
             </dt>
             <dd className={styles.meta}>
              <Category category={article.category}/>
-             <Date date={article.publishedAt}/>
+             <Date date={article.publishedAt ?? article.createdAt}/>
             </dd>
           </dl>
         </Link>
