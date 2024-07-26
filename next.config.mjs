@@ -4,7 +4,7 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  target: "serverless",
+  // target: "serverless",
   images: {
     remotePatterns: [
       {
