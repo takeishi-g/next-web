@@ -4,7 +4,6 @@ import Image from 'next/image'
 import { getMemberList } from '../_libs/microcms'
 import { MEMBERS_LIST_LIMIT } from '../constants'
 
-export const revalidate = 0
 
 async function Page() {
   const data = await getMemberList({ limit: MEMBERS_LIST_LIMIT})
