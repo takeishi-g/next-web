@@ -19,7 +19,7 @@ function Menu() {
             <Link href="/news">ニュース</Link>
           </li>
           <li>
-            <Link href="members">メンバー</Link>
+            <Link href="/members">メンバー</Link>
           </li>
           <li>
             <Link href="/contact">お問い合わせ</Link>
