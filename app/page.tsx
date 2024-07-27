@@ -7,7 +7,6 @@ import NewsList from "./_components/NewsList";
 import { TOP_NEWS_LIMIT } from "./constants";
 
 
-
 export default async function Home() {
   const data = await getNewsList({ limit: TOP_NEWS_LIMIT })
   const name = "世界";
