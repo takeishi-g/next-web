@@ -2,9 +2,9 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxgen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
     --color-text-main: #333;
-    --colot-text-sub: #999;
-    --colot-text-unpainted: #fff;
-    --colot-text-error: #f33;
+    --color-text-sub: #999;
+    --color-text-unpainted: #fff;
+    --color-text-error: #f33;
     --color-bg-main: #fff;
     --color-bg-sub: #f3f3f3;
     --color-bg-code: #fafafa;

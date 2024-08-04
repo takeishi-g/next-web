@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from "./page.module.css"
 import Image from 'next/image'
-import { getMemberList } from '../_libs/microcms'
-import { MEMBERS_LIST_LIMIT } from '../constants'
+import { getMemberList } from '../../_libs/microcms'
+import { MEMBERS_LIST_LIMIT } from '../../constants'
 
 
 async function Page() {

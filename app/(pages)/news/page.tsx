@@ -1,5 +1,5 @@
-import NewsList from "../_components/NewsList";
-import { getNewsList } from "../_libs/microcms";
+import NewsList from "../../_components/NewsList";
+import { getNewsList } from "../../_libs/microcms";
 
 
 export default async function Page() {
