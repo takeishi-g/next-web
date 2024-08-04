@@ -64,6 +64,11 @@ export const createContactData = async (_prevState: any, formData: FormData) => 
           },
           {
             objectTypeId: "0-1",
+            name: "email",
+            value: rawFormData.email
+          },
+          {
+            objectTypeId: "0-1",
             name: "message",
             value: rawFormData.message
           }
