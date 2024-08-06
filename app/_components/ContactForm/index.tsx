@@ -13,6 +13,16 @@ const initisalstate = {
 function ContactForm() {
   const [ state, formAction ] = useFormState(createContactData, initisalstate)
   console.log(state)
+
+  if (state.status === "success") {
+    return (
+      <p className={styles.success}>
+        お問い合わせいただき、ありがとうございます。
+        <br />
+        お返事まで今しばらくお待ちください。
+      </p>
+    )
+  }
   return (
     <form className={styles.form} action={formAction}>
       <div className={styles.horizontal}>
